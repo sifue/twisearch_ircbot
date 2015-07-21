@@ -4,10 +4,12 @@ assemblySettings
 
 name := "twisearch_ircbot"
 
-version := "2.1"
+version := "3.0"
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.11.0"
 
 mainClass in assembly := Some("TwisearchIrcbot")
 
-libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-actors" % _)
+libraryDependencies ++= List(
+  "com.typesafe.akka" %% "akka-actor" % "2.3.12"
+)
