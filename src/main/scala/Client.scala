@@ -3,8 +3,6 @@ import com.sorcix.sirc.IrcConnection
 import com.sorcix.sirc.User
 import com.sorcix.sirc.Channel
 import java.nio.charset.Charset
-import scala.actors.Actor 
-import com.sorcix.sirc.NickNameException
 
 class Client(address: String, channel: String, nickname: String, charset: String) extends IrcAdaptor {
   val irc = new IrcConnection
